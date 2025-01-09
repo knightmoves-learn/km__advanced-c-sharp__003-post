@@ -1,0 +1,1 @@
+public record Employee(string name, string jobTitle, int salary);
