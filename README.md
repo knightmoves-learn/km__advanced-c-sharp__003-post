@@ -11,19 +11,19 @@ In this assignment you will refactor add to a controller in an API meant to keep
 
 In `EmployeeApi/Controllers/EmployeeController.cs`...
 - Should contain an HTTP GET method
-    - This method should return a list of `Employee`s
+    - This method should return a list of `Employee`s.
     - The list of `Employee`s being returned should be empty if no employees have been added.
     - The list of `Employee`s being returned should contain employees added through your HTTP POST method after POST requests have been made.
 - Should contain an HTTP POST method
     - This method should accept an `Employee` in its body.
     - This method should add the `Employee` to a list which can be returned by your HTTP GET method afterwards.
     - This method should return the `Employee` being added.
-- All methods should use the route `/Employee`
+- All methods should use the route `/Employee`.
 
 Additional Information:
 
-- The `Employee` type is defined for you as a record in `EmployeeApi/Models/EmployeeModel.cs`, do not change this definition
-- You should NOT change any code within the `TestsProj` directory
+- The `Employee` type is defined for you as a record in `EmployeeApi/Models/EmployeeModel.cs`, do not change this definition.
+- You should ONLY make code changes in `EmployeeApi/Controllers/EmployeeController.cs` to complete this assignment.
 
 ## Resources
 
