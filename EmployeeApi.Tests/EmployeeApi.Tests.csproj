@@ -4,11 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <!-- <AssemblyName>Lesson3.EmployeeApi.Tests</AssemblyName>
-    <RootNamespace>Lesson3.EmployeeApi.Tests</RootNamespace> -->
   </PropertyGroup>
 
   <ItemGroup>
