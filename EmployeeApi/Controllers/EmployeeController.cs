@@ -6,16 +6,20 @@ namespace EmployeeApi.Controllers
     [Route("[controller]")]
     public class EmployeeController : ControllerBase
     {
-        private List<Employee> employees = new List<Employee>() {new Employee(
-            name: "Default Employee",
-            jobTitle: "Unemployed",
-            salary: 0
-        )};
+        private static List<Employee> employees = new List<Employee>();
 
         [HttpGet]
         public IEnumerable<Employee> ListEmployees()
         {
             return employees;
+        }
+
+        [HttpPost]
+
+        public Employee Post([FromBody] Employee employee)
+        {
+            employees.Add(employee);
+            return employee;
         }
     }
 }
